@@ -23,7 +23,7 @@ Follow these steps to get the Mental Health Detector up and running on your loca
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/Mental_Health_Detector_Webapp.git
+    git clone https://github.com/RajdeepSutradhar5105/Mental_Health_Detector_Webapp.git
     cd Mental_Health_Detector
     ```
 
