@@ -69,9 +69,45 @@ Follow these steps to get the Mental Health Detector up and running on your loca
 4. Scroll down for educational resources and emergency contact info.
 
 ---
- ## 📽️Video Presentation Of Project
+ ## Video Presentation Of Project
 
 https://github.com/user-attachments/assets/b7e67fe6-2906-402d-b60c-9924e44b8469
 
+---
+## Workflow
+```mermaid
+flowchart TD
+    A[Start: User Opens App] --> B[Page Configuration & Styling]
+    B --> C[Load Dataset from CSV]
+    C --> D[Preprocess Data with Label Encoding]
+    D --> E[Train Random Forest Model]
+    E --> F[Display App Header and Info Box]
+
+    F --> G[Show Assessment Form]
+    
+    G --> G1[Personal Information]
+    G --> G2[Academic & Work Pressure]
+    G --> G3[Lifestyle Factors]
+    G --> G4[Risk Assessment]
+
+    G --> H[Show Quick Stats & Feature Importance]
+
+    H --> I[User Clicks 'Analyze Mental Health Status']
+
+    I --> J[Encode Inputs from User]
+    J --> K[Predict Depression Risk]
+    K --> L{Prediction Result?}
+    
+    L -->|High Risk| M1[Show Warning Box with Probability]
+    L -->|Low Risk| M2[Show Success Box with Probability]
+    
+    M1 --> N[Show Risk Breakdown Pie Chart]
+    M2 --> N[Show Risk Breakdown Pie Chart]
+    
+    N --> O[Generate Personalized Insights]
+    O --> P[Display Mental Health Resources]
+    P --> Q[Footer with Credits]
+    Q --> R[End]
+```
 
 
